@@ -16,3 +16,15 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Car {
+  id          String   @id @default(uuid())
+  name        String
+  color       String
+  gas         String
+  year        Int
+  price       Float
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
